@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div><a href="./index.html">Javascript CA Module 4</a></div>
+      <div>
+        <div><a href="./index.html">Home</a></div>
+        <div><a href="./contact.html">Contact Us</a></div>
+      </div>
+    </div>
+    <form id="infoForm">
+      <h1>Contact Us</h1>
+      <h3 id="submition"></h3>
+      <div class="form-group">
+        <div>
+          <label for="name"> Name (required) </label>
+        </div>
+        <div>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter Name Here"
+          />
+        </div>
+
+        <span id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <label for="subject"> Subject (minimum length of 10) </label>
+        </div>
+        <div>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="Enter Subject Here"
+          />
+        </div>
+        <span id="subjectError"></span>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <label for="email"> Email(email address) </label>
+        </div>
+        <div>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter Email Here"
+          />
+        </div>
+        <span id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <label for="address"> Address (minimum length of 25) </label>
+        </div>
+        <div>
+          <input
+            id="address"
+            name="address"
+            type="text"
+            placeholder="Enter Address Here"
+          />
+        </div>
+        <span id="addressError"></span>
+      </div>
+
+      <button>Submit</button>
+    </form>
+    <div class="footer">
+      <div><a href="./index.html">All rights reserved</a></div>
+    </div>
+    <script src="./js/validation.js"></script>
+  </body>
+</html>
